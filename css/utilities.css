@@ -60,7 +60,16 @@
         background-color: var(--light-color);
         color: #333;
     }
-
+    .bg-light a,
+    .btn-light a,
+    .bg-dark a,
+    .btn-dark a,
+    .bg-primary a,
+    .btn-primary a,
+    .bg-secondary a,
+    .btn-secondary a{
+        color: #fff;
+    }
     /*text size*/
 .lead{
     font-size: 20px;
