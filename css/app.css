@@ -173,3 +173,55 @@ img{
 .footer .social a{
     margin: 0 10px;
 }
+
+/*features*/
+
+.features-head img,
+.features-sub-head img{
+    width: 200px;
+    justify-self: flex-end;
+}
+
+/*Tablets and under */
+@media(max-width:768px){
+.grid,
+.showcase .grid,
+.stats .grid,
+.cloud .grid,
+.cli .grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+.showcase{
+    height: auto;
+}
+.showcase-text{
+    text-align: center;
+    margin-top: 40px;
+}
+.showcase-form{
+    justify-self: center;
+    margin: auto;
+}
+
+.cli .grid>*:first-child{
+    grid-row: 1;
+    grid-column: 1;
+}
+}
+/*for mobile*/
+@media(max-width:500px){
+
+    .navbar{
+        height: 110px;
+    }
+     .navbar .flex{
+         flex-direction: column;
+     }
+
+     .navbar ul{
+         background-color:rgba(0, 0, 0, 0.1);
+         padding: 10px;
+     }
+
+}
