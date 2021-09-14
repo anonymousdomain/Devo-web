@@ -100,11 +100,17 @@ pre {
   overflow: visible;
 }
 
+.showcase-text{
+    animation: slidefromLeft 1s ease-in ;
+}
 .showcase-form {
   position: relative;
   top: 60px;
   height: 350px;
   width: 400px;
+  padding: 40px;
+  z-index: 100;
+  animation: slidefromRight 1s ease-in ;
 }
 .showcase::after {
   content: "";
@@ -216,7 +222,48 @@ pre {
   margin-bottom: 5px;
   border-bottom: 1px #ccc solid;
 }
+/* Animations*/
+@keyframes slidefromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
 
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+@keyframes slidefromRight {
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%
+    {
+        transform: translateX(0);
+    }
+}
+
+@keyframes slidefromTop {
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%
+    {
+        transform: translateY(0);
+    }
+}
+@keyframes slidefrombottom {
+    0%{
+        transform: translateY(100%);
+    }
+
+    100%
+    {
+        transform: translateY(0);
+    }
+}
 /*Tablets and under */
 @media (max-width: 768px) {
   .grid,
@@ -238,10 +285,12 @@ pre {
   .showcase-text {
     text-align: center;
     margin-top: 40px;
+    animation: slidefromTop 1s ease-in;
   }
   .showcase-form {
     justify-self: center;
     margin: auto;
+    animation: slidefrombottom 1s ease-in;
   }
 
   .cli .grid > *:first-child {
