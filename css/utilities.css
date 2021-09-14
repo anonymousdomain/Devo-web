@@ -17,6 +17,19 @@
     .text-center{
         text-align: center;
     }
+
+    .alert{
+        background-color: var(--light-color);
+        padding: 10px 20px;
+        font-weight: bold;
+        margin: 15px 0;
+    }
+    .alert i{
+        margin-right: 10px;
+    }
+    .alert-success{
+        
+    }
     .card{
        background-color: #fff;
        box-shadow: 0 3px 10px rgba(0,0,0,0.2);
