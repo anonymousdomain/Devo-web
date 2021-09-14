@@ -2,11 +2,13 @@
 :root{
     --primary-color:#047aed;
     --secondary-color:#1c3fa8;
-    --dark-color:#002240;
-    --light-color:#f4f4f4;
+    --dark-color:#002240; 
+    --light-color:#f4f4f4; 
+    --success-color:#5cb85c;
+    --error-color:#d9534f;
 }
 *{
-    border-sizing:border-box;
+    box-sizing:border-box;
     padding: 0;
     margin: 0;
 }
@@ -39,7 +41,11 @@ p{
 img{
   width: 100%;  
 }
-
+code,pre{
+ background-color: #333;
+ color: #fff;
+ padding: 10px;   
+}
 .navbar{
     background-color:var(--primary-color);
     color: #fff;

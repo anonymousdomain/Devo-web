@@ -28,7 +28,12 @@
         margin-right: 10px;
     }
     .alert-success{
-        
+        background-color: var(--success-color);
+        color: #fff;
+    }
+    .alert-error{
+        background-color: var(--error-color);
+        color: #fff;
     }
     .card{
        background-color: #fff;
@@ -82,6 +87,11 @@
     .bg-secondary a,
     .btn-secondary a{
         color: #fff;
+    }
+
+    .text-primary{
+         color:var(--primary-color);
+        
     }
     /*text size*/
 .lead{
